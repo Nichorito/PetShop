@@ -1,0 +1,57 @@
+.sidebar {
+    height: 95vh; /* Full height of the viewport */
+    padding: 0;
+    border-right: 1px solid #ddd;
+    position: sticky;
+    z-index: 100;
+    top: 0; /* Keeps it stuck at the top */
+    overflow-y: auto; /* Allows scrolling inside if needed */
+    background-color: white; /* Ensures it's not transparent */
+}
+
+
+body {
+    height: 100vh;
+}
+
+content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+}
+
+/* Hover effect */
+.nav-item:hover {
+    background-color: lightgray;
+    transition: 0.5s;
+}
+
+/* Active state styling */
+.nav-item.active {
+    background-color: #007bff !important;
+    color: white !important; 
+}
+
+.active {
+    color: white !important; 
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    margin-top: auto;
+    text-align: center;
+    z-index: 1;
+}
+
+img {
+    width: 100%; 
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
